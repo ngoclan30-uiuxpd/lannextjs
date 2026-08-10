@@ -108,7 +108,7 @@ function CVPageContent() {
                     </li>
                     <li className="contact-pill">
                       <Icons.Work />
-                      <a href="https://imlandinh-design.vercel.app/#work" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>{t("View Projects", "Xem các dự án")}</a>
+                      <a href="https://imlandinh-design.vercel.app/#work" style={{ color: "inherit", textDecoration: "none" }}>{t("View Projects", "Xem các dự án")}</a>
                     </li>
                   </ul>
                 </div>
