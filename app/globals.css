@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Google+Sans+Display:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --ink: #111111;
+  --paper: #ffffff;
+  --bg: #ffffff;
+  --bg-secondary: #f8f8f8;
+  --sage: #3d8b6e;
+  --amber: #e8a842;
+  --muted: #6b6b6b;
+  --border: #e5e5e5;
+  --card: #f5f5f5;
+  --card-border: #ebebeb;
+  --accent-purple: #eeab25;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: 'Google Sans', 'Google Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--amber);
+  color: var(--paper);
+}
+
+.font-display {
+  font-family: 'Google Sans', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 2px;
+}
+
+.noise-texture {
+  display: none;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.availability-pulse::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: #4ade80;
+  animation: pulse-ring 1.8s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
