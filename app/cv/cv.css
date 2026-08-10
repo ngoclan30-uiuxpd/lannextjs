@@ -17,10 +17,10 @@
     --cv-text-muted: #64748b;
     --cv-border: #e2e8f0;
 
-    /* Standard A4 padding for print balance */
-    --cv-padding: 18mm;
-    --cv-section-gap: 24px;
-    --cv-item-gap: 16px;
+    /* Standard padding for 1400px widescreen balance */
+    --cv-padding: 44px 56px;
+    --cv-section-gap: 30px;
+    --cv-item-gap: 18px;
     --cv-timeline-gap: 16px;
 }
 
@@ -48,7 +48,7 @@
    ========================================================================== */
 .workspace {
     width: 100%;
-    padding: 60px 20px;
+    padding: 60px 25px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -60,7 +60,8 @@
     min-height: 100vh;
     height: auto;
     position: relative;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .mouse-glow {
@@ -81,8 +82,8 @@
 
 .page-container {
     perspective: 1000px;
-    width: 100%;
-    max-width: 1200px;
+    width: 1400px;
+    min-width: 1400px;
     position: relative;
     z-index: 2;
 }
@@ -91,8 +92,8 @@
    CV SHEET: WIDESCREEN MODEL SPECIFICATION
    ========================================================================== */
 .cv-page {
-    width: 100%;
-    max-width: 1200px;
+    width: 1400px;
+    min-width: 1400px;
     min-height: auto;
     background-color: var(--cv-bg);
     color: var(--cv-text);
@@ -120,8 +121,8 @@
 /* 2-Column Notion layout */
 .cv-layout {
     display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: 50px;
+    grid-template-columns: 310px 1fr;
+    gap: 52px;
     flex: 1;
     margin-top: 10px;
 }
@@ -142,8 +143,8 @@
 }
 
 .photo-placeholder {
-    width: 239px;
-    height: 307px;
+    width: 260px;
+    height: 335px;
     margin: 0 auto;
     background-color: #f1f5f9;
     overflow: hidden;
@@ -435,14 +436,21 @@
    PRINT MEDIA RULES (GENERATE VECTOR PDF)
    ========================================================================== */
 @media print {
+    @page {
+        size: 1400px 2200px;
+        margin: 0;
+    }
+
     body {
         background-color: #ffffff !important;
         color: #000000 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
     }
 
     .editor-container-wrapper {
         display: block;
-        width: 100%;
+        width: 1400px !important;
         height: auto;
         background: none !important;
     }
@@ -457,33 +465,52 @@
         padding: 0;
         margin: 0;
         display: block;
+        width: 1400px !important;
         height: auto;
     }
 
     .page-container {
         perspective: none;
+        width: 1400px !important;
+        max-width: 1400px !important;
     }
 
     .cv-page {
-        width: 210mm !important;
-        max-width: 210mm !important;
-        min-height: 297mm !important;
+        width: 1400px !important;
+        max-width: 1400px !important;
+        min-height: auto !important;
         box-shadow: none !important;
-        margin: 0 !important;
-        padding: var(--cv-padding) !important;
-        page-break-after: auto !important;
+        margin: 0 auto !important;
+        padding: 44px 56px !important;
         box-sizing: border-box !important;
         background-color: #ffffff !important;
         background-image: none !important;
     }
 
     .cv-layout {
-        grid-template-columns: 210px 1fr !important;
-        gap: 35px !important;
+        display: grid !important;
+        grid-template-columns: 310px 1fr !important;
+        gap: 52px !important;
     }
 
     .cv-left-col {
-        padding-right: 25px !important;
+        padding-right: 40px !important;
+    }
+
+    .photo-placeholder {
+        width: 260px !important;
+        height: 335px !important;
+    }
+
+    .contact-pill {
+        font-size: 0.85rem !important;
+        padding: 8px 13px !important;
+        white-space: nowrap !important;
+    }
+
+    .contact-pill span,
+    .contact-pill a {
+        font-size: 0.85rem !important;
     }
 
     .cv-page * {

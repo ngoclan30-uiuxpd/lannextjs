@@ -4,9 +4,21 @@ export function useLanguage() {
   const [lang, setLang] = useState<string>("en");
 
   useEffect(() => {
-    const savedLang = localStorage.getItem("portfolio_lang");
-    if (savedLang) {
-      setLang(savedLang);
+    if (typeof window === "undefined") return;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get("lang");
+    let currentLang = "en";
+
+    if (langParam === "vi" || langParam === "en") {
+      currentLang = langParam;
+      localStorage.setItem("portfolio_lang", langParam);
+    } else {
+      currentLang = localStorage.getItem("portfolio_lang") || "en";
+    }
+
+    if (currentLang !== "en") {
+      setLang(currentLang);
     }
 
     const handleLangChange = () => {
