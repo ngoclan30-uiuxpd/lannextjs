@@ -71,8 +71,8 @@ The homepage had to satisfy three objectives that often competed with one anothe
 ### Business
 Increase the visibility of campaigns, promotions, vouchers, and seasonal events without limiting future marketing opportunities.
 
-### Users
-Help users quickly discover products and relevant offers without overwhelming them with promotional content.
+### User Experience
+Create a clearer shopping experience that helps users discover products and relevant offers without overwhelming them with promotional content.
 
 ### Product
 Create a homepage structure that could continuously accommodate new business initiatives without requiring major layout changes every time a campaign was launched.
@@ -84,7 +84,7 @@ The challenge was not choosing one objective over another, but designing a solut
 Every design decision was guided by four principles.
 
 ### Design around shopping behavior
-Organize the homepage based on how people naturally browse and shop, rather than the priority of individual campaigns.
+Structure the homepage around a clearer shopping journey and content hierarchy.
 ---
 ### Reduce visual competition
 Create a clearer information hierarchy so promotional content supports, rather than interrupts, product discovery.
@@ -515,10 +515,8 @@ Liên tục triển khai nhiều chiến dịch mới.
 
 Cần nhiều vị trí hiển thị hơn.
 ---
-### User
-Vẫn cần tìm được sản phẩm nhanh.
-
-Không bị quá tải.
+### User Experience
+Tạo trải nghiệm mua sắm rõ ràng hơn, giúp người dùng dễ dàng khám phá sản phẩm và ưu đãi mà không bị phân tán bởi quá nhiều nội dung khuyến mãi.
 ---
 ### Product
 Trang chủ phải tiếp tục phát triển trong tương lai mà không cần thay đổi cấu trúc mỗi khi có chiến dịch mới.`,
@@ -527,7 +525,7 @@ Trang chủ phải tiếp tục phát triển trong tương lai mà không cần
 Mọi quyết định thiết kế đều dựa trên bốn nguyên tắc.
 
 ### Thiết kế xoay quanh hành vi mua sắm
-Tổ chức trang chủ dựa trên cách mọi người duyệt web và mua sắm tự nhiên, thay vì mức độ ưu tiên của từng chiến dịch riêng lẻ.
+Xây dựng cấu trúc trang chủ dựa trên hành trình mua sắm và thứ bậc nội dung rõ ràng.
 ---
 ### Giảm thiểu sự cạnh tranh về mặt thị giác
 Tạo ra hệ thống phân cấp thông tin rõ ràng hơn để nội dung quảng cáo hỗ trợ, thay vì cản trở việc khám phá sản phẩm.

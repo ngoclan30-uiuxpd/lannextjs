@@ -178,7 +178,7 @@ function CVPageContent() {
                     <div className="experience-item">
                       <div className="exp-header">
                         <div className="exp-role-company">
-                          <span className="role">{t("Product Designer", "Product Designer")}</span>
+                          <span className="role">{t("UI/UX & Product Designer", "UI/UX & Product Designer")}</span>
                           <span className="divider">|</span>
                           <span className="company">{t("Mobile World Investment Corporation (MWG)", "Mobile World Investment Corporation (MWG)")}</span>
                         </div>

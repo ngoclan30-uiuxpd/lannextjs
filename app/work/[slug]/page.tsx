@@ -17,7 +17,7 @@ export async function generateMetadata({
   if (!project) return { title: "Project Not Found" };
 
   return {
-    title: `${project.title} — ${project.company} | Maya Chen`,
+    title: `${project.title} — ${project.company} | Lan Đinh`,
     description: project.description,
     openGraph: {
       title: `${project.title} — ${project.company}`,

@@ -241,7 +241,7 @@ export default function Hero() {
 
               {/* Portrait */}
               <div className="portrait-circle">
-                <img src="/portrait.png" alt="Maya Chen" />
+                <img src="/portrait.png" alt="Lan Đinh" />
               </div>
 
               {/* Pills — positioned via JS on orbit paths */}

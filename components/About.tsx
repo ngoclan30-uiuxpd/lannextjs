@@ -11,7 +11,7 @@ export default function About() {
   const experience = [
     {
       period: "2017 — 2026",
-      role: t("Product Designer & Senior Graphic Designer", "Product Designer & Senior Graphic Designer"),
+      role: t("UI/UX/Product Designer & Senior Graphic Designer", "UI/UX/Product Designer & Senior Graphic Designer"),
       company: "MWG",
       note: t(
         "Designed end-to-end product experiences for MWG Shop, supporting the e-commerce ecosystem across Dien May Xanh, The Gioi Di Dong, TopZone, and companion mobile applications.\nLed the visual design of e-commerce campaigns, creating banners, landing pages, and promotional assets that supported large-scale online sales initiatives.\n• UI/UX & Product Designer (2023 – 2026)\n• Senior Graphic Designer (2017 – 2023)",

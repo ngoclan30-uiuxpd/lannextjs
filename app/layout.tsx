@@ -2,20 +2,20 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Lan Đinh — Product Designer",
-  description: "Senior Product Designer specializing in e-commerce experiences. I turn complex shopping journeys into intuitive, conversion-driving products.",
+  title: "Lan Đinh — UI/UX Designer",
+  description: "UI/UX Designer specializing in e-commerce experiences. I turn complex shopping journeys into intuitive, conversion-driving products.",
   keywords: ["product designer", "UX designer", "e-commerce design", "UI design", "design systems"],
   authors: [{ name: "Lan Đinh" }],
   openGraph: {
-    title: "Lan Đinh — Product Designer",
-    description: "Senior Product Designer specializing in e-commerce experiences.",
+    title: "Lan Đinh — UI/UX Designer",
+    description: "UI/UX Designer specializing in e-commerce experiences.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lan Đinh — Product Designer",
-    description: "Senior Product Designer specializing in e-commerce experiences.",
+    title: "Lan Đinh — UI/UX Designer",
+    description: "UI/UX Designer specializing in e-commerce experiences.",
   },
   robots: {
     index: true,
