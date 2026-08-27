@@ -1737,7 +1737,7 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
                   gap: "1.25rem",
                   marginBottom: "1.75rem"
                 }}>
-                  {/* Metric 1: Revenue */}
+                  {/* Metric 1: Orders & Revenue */}
                   <div style={{
                     background: "rgba(255, 255, 255, 0.03)",
                     border: "1px solid rgba(232, 168, 66, 0.2)",
@@ -1749,8 +1749,8 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
                   }}>
                     <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                       <span style={{ fontSize: 14, fontWeight: 600, color: "var(--paper)", display: "flex", alignItems: "center", gap: 6 }}>
-                        <span>🚀</span>
-                        <span>{lang === "vi" ? "Doanh thu (Revenue)" : "Revenue"}</span>
+                        <span>🛒</span>
+                        <span>{lang === "vi" ? "Đơn hàng & Doanh thu" : "Orders & Revenue"}</span>
                       </span>
                       <span style={{
                         fontSize: 12,
@@ -1761,18 +1761,20 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
                         borderRadius: 20,
                         border: "1px solid rgba(16, 185, 129, 0.25)"
                       }}>
-                        +3.458,1%
+                        +22.6% đơn · +3.2% DT
                       </span>
                     </div>
-                    <div style={{ fontSize: "clamp(26px, 2.5vw, 32px)", fontWeight: 700, color: "#E8A842", letterSpacing: "-0.02em" }}>
-                      395,19 Tỷ ₫
+                    <div style={{ fontSize: "clamp(24px, 2.3vw, 28px)", fontWeight: 700, color: "#E8A842", letterSpacing: "-0.02em" }}>
+                      140,03 Tỷ ₫ <span style={{ fontSize: 16, fontWeight: 500, color: "var(--paper)" }}>/ 62,9K đơn</span>
                     </div>
-                    <span style={{ fontSize: 12, color: "var(--muted)", lineHeight: 1.4 }}>
-                      {lang === "vi" ? "Tăng trưởng doanh thu đột phá sau khi ra mắt Trang chủ mới" : "Significant revenue growth achieved post homepage redesign"}
+                    <span style={{ fontSize: 12, color: "var(--muted)", lineHeight: 1.5 }}>
+                      {lang === "vi"
+                        ? "Đạt 62,9K đơn hàng (tăng trưởng +22,6%), mang về tổng doanh thu 140,03 Tỷ ₫ (+3,2%)."
+                        : "Reached 62.9K orders (+22.6% growth), generating total revenue of 140.03B ₫ (+3.2%)."}
                     </span>
                   </div>
 
-                  {/* Metric 2: Orders */}
+                  {/* Metric 2: Traffic */}
                   <div style={{
                     background: "rgba(255, 255, 255, 0.03)",
                     border: "1px solid rgba(167, 139, 250, 0.2)",
@@ -1784,8 +1786,8 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
                   }}>
                     <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                       <span style={{ fontSize: 14, fontWeight: 600, color: "var(--paper)", display: "flex", alignItems: "center", gap: 6 }}>
-                        <span>🛒</span>
-                        <span>{lang === "vi" ? "Tổng đơn hàng (Orders)" : "Total Orders"}</span>
+                        <span>📈</span>
+                        <span>{lang === "vi" ? "Lượng truy cập (Traffic)" : "Traffic"}</span>
                       </span>
                       <span style={{
                         fontSize: 12,
@@ -1796,18 +1798,20 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
                         borderRadius: 20,
                         border: "1px solid rgba(167, 139, 250, 0.25)"
                       }}>
-                        +2.545,0%
+                        +35.9% Sessions
                       </span>
                     </div>
-                    <div style={{ fontSize: "clamp(26px, 2.5vw, 32px)", fontWeight: 700, color: "#a78bfa", letterSpacing: "-0.02em" }}>
-                      168,4K <span style={{ fontSize: 16, fontWeight: 500, color: "var(--muted)" }}>{lang === "vi" ? "đơn hàng" : "orders"}</span>
+                    <div style={{ fontSize: "clamp(24px, 2.3vw, 28px)", fontWeight: 700, color: "#a78bfa", letterSpacing: "-0.02em" }}>
+                      2,8 triệu <span style={{ fontSize: 16, fontWeight: 500, color: "var(--muted)" }}>Sessions</span>
                     </div>
-                    <span style={{ fontSize: 12, color: "var(--muted)", lineHeight: 1.4 }}>
-                      {lang === "vi" ? "Tỷ lệ chốt đơn tăng cao từ luồng sản phẩm tối ưu" : "Conversion surge driven by optimized discovery flows"}
+                    <span style={{ fontSize: 12, color: "var(--muted)", lineHeight: 1.5 }}>
+                      {lang === "vi"
+                        ? "Đạt 2,8 triệu Sessions (+35,9%), trong đó Trang chủ mới là phễu chính dẫn dắt người dùng với 2,79 triệu lượt truy cập."
+                        : "Reached 2.8M Sessions (+35.9%), with the new Homepage as the primary funnel driving 2.79M visits."}
                     </span>
                   </div>
 
-                  {/* Metric 3: Traffic & DAU */}
+                  {/* Metric 3: System Peak Load */}
                   <div style={{
                     background: "rgba(255, 255, 255, 0.03)",
                     border: "1px solid rgba(59, 130, 246, 0.2)",
@@ -1819,8 +1823,8 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
                   }}>
                     <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                       <span style={{ fontSize: 14, fontWeight: 600, color: "var(--paper)", display: "flex", alignItems: "center", gap: 6 }}>
-                        <span>📈</span>
-                        <span>{lang === "vi" ? "Lượng truy cập (Traffic)" : "Traffic & DAU"}</span>
+                        <span>⚡</span>
+                        <span>{lang === "vi" ? "Tải hệ thống đỉnh điểm" : "Peak System Load"}</span>
                       </span>
                       <span style={{
                         fontSize: 12,
@@ -1831,14 +1835,16 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
                         borderRadius: 20,
                         border: "1px solid rgba(59, 130, 246, 0.25)"
                       }}>
-                        Peak ~62K DAU
+                        ~71K Session/ngày
                       </span>
                     </div>
-                    <div style={{ fontSize: "clamp(26px, 2.5vw, 32px)", fontWeight: 700, color: "#3b82f6", letterSpacing: "-0.02em" }}>
-                      8,0M <span style={{ fontSize: 16, fontWeight: 500, color: "var(--muted)" }}>Sessions</span>
+                    <div style={{ fontSize: "clamp(24px, 2.3vw, 28px)", fontWeight: 700, color: "#3b82f6", letterSpacing: "-0.02em" }}>
+                      ~62K <span style={{ fontSize: 16, fontWeight: 500, color: "var(--muted)" }}>User/ngày (DAU)</span>
                     </div>
-                    <span style={{ fontSize: 12, color: "var(--muted)", lineHeight: 1.4 }}>
-                      {lang === "vi" ? "Trang chủ dẫn dắt chính với hơn 6,7M+ lượt truy cập phễu" : "Homepage lead funnel drove over 6.7M+ main visits"}
+                    <span style={{ fontSize: 12, color: "var(--muted)", lineHeight: 1.5 }}>
+                      {lang === "vi"
+                        ? "Thiết kế cấu trúc mới vận hành mượt mà ở các mốc peak traffic, đáp ứng đến ~62K User/ngày (DAU) và ~71K Session/ngày."
+                        : "New structural design ran smoothly during peak traffic, accommodating up to ~62K DAU and ~71K Sessions/day."}
                     </span>
                   </div>
                 </div>
@@ -1862,7 +1868,7 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
                     </span>
                   </div>
                   <a
-                    href="https://datastudio.google.com/u/0/reporting/a6fda325-e9c0-4004-bf4b-fe6d94a050cc/page/6LtLF"
+                    href="/report-mwg-shop-overview.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
